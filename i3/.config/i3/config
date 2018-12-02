@@ -103,6 +103,9 @@ workspace $wspace9 gaps inner 20
 # 	Task switching between workspaces
 bindsym $mod+Tab workspace back_and_forth
 #
+#	sticky floating window
+bindsym $mod+shift+s sticky toggle
+#
 #	scratchpad
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
