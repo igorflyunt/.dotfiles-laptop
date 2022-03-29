@@ -9,7 +9,7 @@
  rofi.run-shell-command:              {terminal} -e "bash -lic {cmd}" -t {cmd}
  rofi.hide-scrollbar:                 true
  rofi.separator-style:                solid
- rofi.font:                           xos4 Terminess Powerline 15
+ rofi.font:                           Inconsolata-g for Powerline 12
 ! ------------------------------------------------------------------------------
  rofi.color-enabled:                   true
 

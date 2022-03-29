@@ -24,7 +24,7 @@ set $prtsc_area_buff ~/.bin/i3/prtsc/select_xclip
 set $prtsc_desktop_pic_storage ~/.bin/i3/prtsc/desktop_save
 #
 #	system apps
-set $rofi "rofi -modi 'drun,window,run' -show drun"
+set $rofi "rofi -show-icons -modi 'drun,window,run' -show drun"
 set $ranger ~/.bin/i3/ranger.sh
 set $htop termite --title=htop --name=htop -e "bash -lic htop"
 set $polybar ~/.bin/polybar/polybar.sh
@@ -51,6 +51,7 @@ font pango: Terminess Powerline 11
 # 	application-workspace anchor settings
 assign [class="Google-chrome"] $workspace1
 assign [class="Skype"] $wspace7
+assign [class="zoom"] $wspace7
 assign [title="ncmpcpp"] $wspace10
 assign [class="jetbrains-idea"] $wspace3
 assign [class="Zathura"] $wspace4

@@ -10,7 +10,6 @@ visualizer_output_name = "my fifo"
 
 visualizer_in_stereo = yes
 
-visualizer_sample_multiplier = 2
 
 visualizer_sync_interval = 10
 
@@ -44,7 +43,6 @@ centered_cursor = yes
 progressbar_look = "── "
 #progressbar_look = "  "
 
-progressbar_boldness = no
 
 user_interface = classic 
 
@@ -82,7 +80,10 @@ main_window_color = white
 
 color1 = blue
 
-main_window_highlight_color = 250
+#current_item_prefix = $(black_250)
+#main_window_highlight_color = 250
+
+current_item_prefix = $(250)$r
 
 progressbar_color = 235
 
@@ -92,6 +93,7 @@ statusbar_color = white
 
 alternative_ui_separator_color = 235
 
-active_column_color = 240
+# removed current_item_inactive_column_(prefix/suffix)
+#active_column_color = 240
 
 window_border_color = 1

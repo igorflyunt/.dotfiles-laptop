@@ -26,10 +26,10 @@ ws-icon-3 = 4;
 ws-icon-4 = 5;
 ws-icon-5 = 6;
 ws-icon-6 = 7;
-ws-icon-7 = 8;
+ws-icon-7 = 8;
 ws-icon-8 = 9;
 ws-icon-9 = 10;
-ws-icon-default =
+;ws-icon-default = 
 index-sort = true
 wrapping-scroll = true
 
@@ -82,8 +82,8 @@ label =  %percentage_used%%
 
 [module/date]
 type = internal/date
-interval = 0
-date = %{A1:gsimplecal:}%a %d %b %Y  %I:%M:%S %P%{A}
+interval = 0.00001
+date = %{A1:gsimplecal:}%a, %d %b | %I:%M:%S %P%{A}
 
 [module/powermenu]
 type = custom/menu

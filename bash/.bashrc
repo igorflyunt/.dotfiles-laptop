@@ -61,5 +61,10 @@ export EDITOR=nvim
 # Avoid succesive duplicates in the bash command history.
 export HISTCONTROL=ignoredups
 
+# kubectl commands compeletion
+source <(kubectl completion bash)
+
 # aliases
 . ~/.bash_aliases
+. ~/.git_aliases
+. ~/.bash_work_aliases

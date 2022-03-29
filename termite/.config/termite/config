@@ -1,6 +1,8 @@
 [options]
 scrollback_lines = 10001
-font             = xos4 Terminess Powerline 16
+#font             = xos4 Terminess Powerline 16
+#font             = TerminessTTF Nerd Font 18
+font             = Inconsolata-g for Powerline 14
 clickable_url    = true
 browser          = google-chrome-stable
 allow_bold       = false

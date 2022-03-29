@@ -9,6 +9,9 @@ alias pu='sudo pacman -Suy'
 alias pro='sudo pacman -Rns $(sudo pacman -Qtdq)'  # remove orphans
 alias pc='sudo pacman -Scc'                        # clean cache
 alias pr='sudo pacman -Rns'                        # remove package
+alias pinfo='pacman -Si'
+alias painfo='pacaur -Si'
+
 #
 #pacaur
 alias pau='pacaur -Suya'
@@ -37,3 +40,6 @@ alias sysinfo='inxi -F && dfc'
 alias backup='rsync -av --copy-links --delete ~/Documents ~/Music /media/External_HD/backup/'
 alias amount='jmtpfs /media/adev'
 alias aumount='s umount -v /media/adev'
+
+
+# work

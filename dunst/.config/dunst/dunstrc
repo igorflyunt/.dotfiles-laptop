@@ -1,5 +1,5 @@
 [global]
-    font = xos4 Terminess Powerline 12
+    font = TerminessTTF Nerd Font 14
     
     allow_markup = yes
     
