@@ -1,7 +1,5 @@
 [global]
-    font = TerminessTTF Nerd Font 14
-    
-    allow_markup = yes
+    font = TerminessTTF Nerd Font Medium 13.5
     
     format = "<b>%s</b>\n%b"
     
@@ -9,17 +7,21 @@
     
     indicate_hidden = yes
     
-    alignment = left
-    
-    bounce_freq = 0
+    alignment = center 
     
     show_age_threshold = 60
     
     word_wrap = yes
     
     ignore_newline = no
-    
-    geometry = "350-0+31"
+
+    width = 450
+    height = 200
+    offset = 0x040
+    origin = top-center
+
+    ellipsize = end
+    gap_size = 2
     
     shrink = yes
     
@@ -27,9 +29,9 @@
     
     idle_threshold = 0
     
-    monitor = 0
+    monitor = 1
     
-    follow = mouse
+    follow = none
     
     sticky_history = yes
     
@@ -47,19 +49,16 @@
     
     separator_color = "#5395e0"
     
-    startup_notification = false
-    
     dmenu = /usr/bin/dmenu -p dunst:
     
     browser = /usr/bin/firefox -new-tab
 
     icon_position = left
 
-[frame]
-    width = 0
-    color = "#383838"
+    corner_radius = 0
 
-[shortcuts]
+    frame_width = 0
+    frame_color = "#383838"
 
     close = ctrl+space
     

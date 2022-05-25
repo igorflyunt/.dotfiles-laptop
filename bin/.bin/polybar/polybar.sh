@@ -11,4 +11,5 @@ while pgrep -x polybar >/dev/null; do sleep 1; done
 
 # Launch bar1 and bar2
 polybar -r top_bar &
+polybar -r top_bar_right &
 echo "Bars launched..."

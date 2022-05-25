@@ -13,4 +13,6 @@ eval $(/usr/bin/gnome-keyring-daemon --start --components=secrets)
 blueman-applet &
 nm-applet &
 sleep 3 && skypeforlinux &
+
+xrandr --output DisplayPort-1 --primary --left-of DisplayPort-2 &
 exec i3 

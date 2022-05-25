@@ -1,4 +1,5 @@
 include-file = /home/iflyunt/.config/polybar/bars/top.conf
+include-file = /home/iflyunt/.config/polybar/bars/top-dp2.conf
 include-file = /home/iflyunt/.config/polybar/bars/player.conf
 include-file = /home/iflyunt/.config/polybar/global.conf
 
@@ -19,6 +20,9 @@ label-mounted = %{A1:~/.bin/sys/run_iotop:} %free%%{A}
 
 [module/i3]
 type = internal/i3
+pin-workspaces = true
+strip-wsnumbers = true
+label-empty =
 ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
@@ -46,6 +50,8 @@ label-unfocused-padding = 3
 label-urgent = %icon%!
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 4
+label-visible = %icon%
+label-visible-padding = 3
 
 [module/mpd]
 type = internal/mpd

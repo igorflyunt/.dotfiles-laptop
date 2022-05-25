@@ -1,0 +1,104 @@
+configuration {
+	display-drun:    "apps";
+	drun-display-format:            "{name}";
+}
+
+* {
+	accent:           #82aaff;
+  background:       #383c4a;
+  background-light: #282B35;
+  background-focus: #464A5B;
+  foreground:       #959DCB;
+  foreground-list:  #bbbbbb;
+  font:                            "Inconsolata-g for Powerline 13";
+}
+
+window {
+    background-color: @background;
+    border:           0;
+    padding:          0;
+    width: 30%;
+}
+
+mainbox {
+    border:  0;
+    padding: 0;
+}
+
+textbox {
+    text-color: @foreground;
+}
+
+listview {
+    fixed-height: 0;
+    border:       0px 0px 0px ;
+    spacing:      5px;
+    scrollbar:    false;
+    padding:      10px 10px 10px 10px;
+    lines: 10;
+}
+
+element {
+    border:  0px 0px 0px 3px;
+    border-radius: 5 5 5 5;
+    padding: 10px ;
+}
+
+element.normal.normal,
+element.alternate.normal {
+  background-color: @background-light;
+  border-color: @background-light;
+}
+
+element.selected.normal,
+element.selected.active {
+  background-color: @background-focus;
+  text-color: @accent;
+  border-color: @accent;
+  border-radius: 0 5 5 0;
+}
+
+element.normal.active {
+  	background-color: @background-light;
+	text-color: @accent;
+	border-color: @accent;
+	border-radius: 0 5 5 0;
+}
+
+inputbar {
+    spacing:    0;
+    text-color: @normal-foreground;
+    padding:    0px;
+}
+
+entry {
+    padding: 18px 16px 16px 0px;
+    text-color: @accent;
+    placeholder:                    "Search";
+    placeholder-color: @foreground;
+    background-color: @background-light;
+    border-radius: 0 0 15 0;
+    margin: 0;
+}
+
+prompt {
+    padding: 16px 20px;
+    background-color: @accent;
+    text-color: #000;
+    enabled: true;
+    border-radius: 0 0 0 15;
+    margin: 0 0 0 10;
+
+}
+
+inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+textbox-prompt-colon {
+      expand: false;
+      str: "";
+      background-color: @background-light;
+      padding: 16px;
+      margin:0;
+}
